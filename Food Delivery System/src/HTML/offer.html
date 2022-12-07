@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: #e9b2c5;
+            position: relative;
+
+        }
+
+        .box {
+            width: 500px;
+            min-height: 500px;
+            padding: 50px;
+            background: #fff;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px rgba(2, 0, 0, 0.1);
+            color: #555;
+        }
+
+        .box h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-left: 13px;
+        }
+
+        .box h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+            color: #ff2166;
+
+        }
+
+        .box h1 span {
+            font-size: 22px;
+            color: #555;
+
+        }
+        .box b ,p{
+          font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+
+       
+
+        .box button {
+            display: block;
+            margin: 10px auto;
+            border: 0;
+            outline: 0;
+            background: #ff2166;
+            color: #fff;
+            padding: 12px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .box img{
+            width: 180px;
+           
+            margin-left: 100px;
+        }
+
+        .ribbon-wrap {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+
+        }
+
+        .ribbon-wrap ::before .ribbon-wrap::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #f2467b;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .ribbon-wrap ::before {
+            top: 0;
+            right: 0;
+
+        }
+
+        .ribbon-wrap::after {
+            bottom: 0px;
+            left: 0;
+
+        }
+
+        .ribbon {
+            width: 225px;
+            font-size: 15px;
+            text-align: center;
+            padding: 8px 0;
+            background: #ff2166;
+            color: #fff;
+            position: absolute;
+            transform: rotate(-45deg);
+            right: -17%;
+            top: 19%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="box">
+            <h2>STOCK FOOD OFFER PLAN</h2>
+            <h1>Rs.10% <span>/month</span></h1>
+            <b>This is a very limited time offer which is ending on Desember 20,2022</b>
+            <p>Buy subscribing this deal,you get an unlimited access to our huge collection.</p>
+            <button>SUBSCRIBE</button>
+            <img src="./images/foodie hunter.png" alt="">
+            <div class="ribbon-wrap">
+                <div class="ribbon">SPECIAL OFFER</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
